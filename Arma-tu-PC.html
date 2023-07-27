@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+ 
+ 
+    <!--CSS-->
+<link rel="stylesheet" href="style.css">
+   
+
+    <style>
+        /* Estilos para el dropdown del carrito */
+        .carrito-dropdown {
+            display: none;
+            position: absolute;
+            top: 30px;
+            right: 0;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        /* Estilos para mostrar el dropdown al pasar el cursor por encima del carrito */
+        .carrito:hover .carrito-dropdown {
+            display: block;
+        }
+
+        /* Estilos para la imagen del carrito */
+        .carrito-img {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<!--header-->
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="name-brand" href="Index.html">Nyon Tech</a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+          <section class="nav-bar">
+            <div class="search">
+            </div>
+            <div class="carrito">
+              <img src="images/carrito.png" alt="Carrito de compras" class="carrito-img">
+              <div class="carrito-dropdown">
+                <p>Tu futura compra 1</p>
+                <p>Tu futura compra 2</p>
+                <p>Tu futura compra 3</p>
+              </div>
+            </div>
+          </section>
+          
+        </div>
+      </nav>
+  </header>
+        
+<!--Nav bar-->
+
+<section class="nav-bar"> 
+    <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+          <a class="Productos"  href="Productos.html">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="Arma-tu-PC" href="Arma-tu-PC.html">Arma tu PC</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="sponsorsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sponsors
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="sponsorsDropdown">
+            <li><a class="dropdown-item" href="#">Sponsor 1</a></li>
+            <li><a class="dropdown-item" href="#">Sponsor 2</a></li>
+            <li><a class="dropdown-item" href="#">Sponsor 3</a></li>
+            <li><a class="dropdown-item" href="#">Sponsor 4</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+            <a class="Conocenos" href="https://web.whatsapp.com/">Conocenos</a>
+        </li>
+    </ul>
+  </section>
+    
+    <h1>
+        Armá tu PC
+    </h1>
+
+    <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Hola!</h4>
+        <p>Actualmente no tenemos el stock suficiente para que armes tu PC, pero no te preocupes, pronto volveremos con todo lo necesario!</p>
+        <hr>
+        <p class="mb-0">Disculpe las molestias y gracias</p>
+      </div>
+
+<!--Informacion-->
+
+<style>
+    .column {
+      width: calc(33.33% - 20px); /* Cada columna ocupa el 33.33% del ancho y tiene un margen de 10px a cada lado */
+      margin: 10px;
+      float: left; /* Para que las columnas se muestren una al lado de la otra */
+      background-color: #E6FEFF;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="column">
+        <h2>Mapa</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52343.03947124412!2d-57.99436979816992!3d-34.920501247410996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62b1f0085a1%3A0xbcfc44f0547312e3!2sLa%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1690495436724!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+      
+    <div class="column">
+        <h2>Información útil</h2>
+        <p>Explora nuestra amplia selección de hardware nuevo y usado. Encuentra lo último en tecnología y opciones más económicas. Nuestro equipo de expertos está aquí para asesorarte en tu elección. Compra con confianza en nuestra tienda de hardware!</p>
+    </div>
+      
+    <div class="columna-hablemos">
+      <h2>Hablemos</h2>
+      <div class="links">
+        <a href="https://web.whatsapp.com/" target="_blank">
+          <img src="images/whatsapp.png" alt="Whatsapp">
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="images/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="images/facebook.png" alt="Facebook">
+        </a>
+      </div>
+    </div>
+    
+</div>
+      
+</body>
+</html>
